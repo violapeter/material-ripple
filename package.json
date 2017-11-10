@@ -1,5 +1,5 @@
 {
-  "name": "material-ripple",
+  "name": "material-design-ripple",
   "version": "1.0.0",
   "description": "Material ripple animation library",
   "main": "src/index.js",
