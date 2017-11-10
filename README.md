@@ -11,15 +11,45 @@ MaterialRipple.set(['.material-button', '#cta-send'])
 
 ### Install
 ```console
-npm install material-ripple
+npm install material-design-ripple
 ```
 
 ### Usage
+###### with plain js 
 ```html
-<script src="material-ripple.min.js"></script>
+<script src="https://unpkg.com/material-design-ripple@0.1.0/public/material-ripple.min.js"></script>
 ```
 ```js
 MaterialRipple.set('.ripple-container');
+```
+
+###### npm
+```console 
+npm install material-design-ripple
+```
+```js
+import set as makeRipple from 'material-design-ripple'; // ES6
+
+...
+
+makeRipple('.material-button');
+```
+
+### Developing
+
+Auto transpile/refresh
+```console
+npm start
+```
+
+Build prod
+```console
+npm run build:prod
+```
+
+Build dev
+```console
+npm run build:dev
 ```
 
 ### License
