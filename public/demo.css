@@ -1,0 +1,109 @@
+body {
+    align-items: center;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.material-card {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+                0 3px 1px -2px rgba(0, 0, 0, .2),
+                0 1px 5px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    margin: 0 0 30px;
+    min-width: 300px;
+}
+
+.material-card--colored {
+    color: #fff;
+    background: #4052B5;
+}
+
+@media (max-width: 320px) {
+    .material-card {
+        min-width: inherit;
+    }
+}
+
+.material-card__title {
+    bottom: 0;
+    font-size: 18px;
+    left: 0;
+    padding: 16px;
+}
+
+.material-card__content {
+    font-size: 13px;
+    margin: 0;
+    padding: 16px;
+}
+
+.material-card__actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.button {
+    background: #F44337;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12),
+                0 2px 4px rgba(0, 0, 0, .24);
+    color: #fff;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1),
+                background-color .2s cubic-bezier(.4, 0, .2, 1),
+                color .2s cubic-bezier(.4, 0, .2, 1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+.button--fab {
+    border-radius: 50%;
+    bottom: 30px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14),
+                0 4px 8px rgba(0, 0, 0, .28);
+    font-size: 32px;
+    font-weight: 300;
+    height: 64px;
+    position: fixed;
+    min-width: 64px;
+    right: 30px;
+}
+
+.button--flat {
+    background: 0 0;
+    box-shadow: none;
+    color: #000;
+}
+
+.button--light {
+    color: #fff;
+}
+
+.button--flat:hover {
+    background: rgba(158,158,158,.2);
+}

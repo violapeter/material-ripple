@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Material ripple animation demo</title>
+    <meta charset="utf-8">
+    <script src="material-ripple.min.js"></script>
+    <link rel="stylesheet" href="demo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="title">Material ripple animation demo</h1>
+
+    <div class="material-card">
+        <div class="material-card__title">This is a touchable card.</div>
+        <p class="material-card__content">Don't hesitate to poke it.</p>
+        <div class="material-card__actions">
+            <button class="button button--flat">Poke it now</button>
+        </div>
+    </div>
+
+    <div class="material-card material-card--colored">
+        <div class="material-card__title">Don't panic</div>
+        <p class="material-card__content">Everything is okay</p>
+        <div class="material-card__actions">
+            <button class="button button--flat button--light">Flatbutton</button>
+        </div>
+    </div>
+
+    <button class="button">Button</button>
+
+    <button class="button button--fab">+</button>
+
+
+    <script>
+
+        MaterialRipple.set(['.material-card', '.button', '.button--light']);
+
+    </script>
+</body>
+</html>
