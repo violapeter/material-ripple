@@ -1,4 +1,4 @@
-#material-ripple
+# material-ripple
 
 > Provides a simple function that creates the [material ripple animation](https://material.io/guidelines/motion/choreography.html#choreography-radial-reaction) clicking the given elements  
 
